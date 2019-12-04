@@ -12,7 +12,8 @@ namespace NFCe
         public int IdNota;
         public int IdLocal;
         public string Descricao;
-        public int Qtd;
+        public string TipoUnidade;
+        public decimal Qtd;
         public decimal ValorUnidade;
         public decimal ValorPago;
     }

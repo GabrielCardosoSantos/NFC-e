@@ -40,27 +40,28 @@ namespace NFCe.Models
 
         public void ShowNota()
         {
-            Console.WriteLine("------------------");
-            Console.WriteLine("Id: " + Nota.Id);
-            Console.WriteLine("Id Lugar: " + Nota.IdLocal);
-            Console.WriteLine("Chave Acesso: " + Nota.ChaveAcesso);
-            Console.WriteLine("Data Emissao: " + Nota.DataEmissao);
-            Console.WriteLine("Valor Compra: " + Nota.ValorCompra);
-            Console.WriteLine("Valor Desconto: " + Nota.ValorDesconto);
-            Console.WriteLine("Lugar: " + Local.Nome);
+            Console.WriteLine("   ------------------");
+            Console.WriteLine("   Id: " + Nota.Id);
+            Console.WriteLine("   Id Lugar: " + Nota.IdLocal);
+            Console.WriteLine("   Chave Acesso: " + Nota.ChaveAcesso);
+            Console.WriteLine("   Data Emissao: " + Nota.DataEmissao);
+            Console.WriteLine("   Valor Compra: " + Nota.ValorCompra);
+            Console.WriteLine("   Valor Desconto: " + Nota.ValorDesconto);
+            Console.WriteLine("   Lugar: " + Local.Nome);
 
+            Console.WriteLine("   ------------------");
             foreach (Produto p in Produtos)
             {
                 //Console.WriteLine("  " + p.Id);
                 //Console.WriteLine("  " + p.IdLocal);
                 //Console.WriteLine("  " + p.IdNota);
-                Console.WriteLine("  " + p.Descricao);
-                Console.WriteLine("    -" + p.Qtd);
-                Console.WriteLine("    -" + p.ValorPago);
-                Console.WriteLine("    -" + p.ValorUnidade);
+                Console.Write("  " + p.Descricao);
+                Console.Write("  " + p.Qtd);
+                Console.Write("  " + p.ValorPago);
+                Console.WriteLine("  " + p.ValorUnidade);
             }
 
-            Console.WriteLine("------------------");
+            Console.WriteLine("   ------------------");
         }
     }
 }
